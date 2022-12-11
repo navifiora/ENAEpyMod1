@@ -1,0 +1,17 @@
+#Python programa que encuentre un intervalo que tenga 73 números no primos seguidos
+
+primo=[]
+no_primo=[]
+i=1
+n=0
+while i < 74:
+  n += 1
+  for x in range(2,n):
+    if (n%x) == 0:
+      no_primo.append(n)
+      i += 1
+      break
+    else:
+      primo.append(n)
+      break
+print(no_primo)
